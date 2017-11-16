@@ -77,7 +77,7 @@ public class MyPanelClass extends JPanel {
         
         // Draw Star
         Polygon p2 = new Polygon();
-        p2.addPoint((width / 3) + 25, (height / 5) + 73);
+        p2.addPoint(x1 + 25, y1 + 73);
         p2.addPoint(x1 + 41, y1 + 73);
         p2.addPoint(x1 + 47, y1 + 58);
         p2.addPoint(x1 + 53, y1 + 73);
@@ -89,6 +89,10 @@ public class MyPanelClass extends JPanel {
         p2.addPoint(x1 + 38, y1 + 83);
         g.setColor(Color.WHITE);
         g.fillPolygon(p2);
+        
+        //Draw border
+        g.setColor(Color.BLACK);
+        g.drawRect(x1, y1, width, height);
         
         
 
